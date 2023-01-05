@@ -1,0 +1,120 @@
+body, h1, h2, h3, h4, h5, h6, p, ol, ul
+    margin: 0
+    padding: 0
+
+*, *:before, *:after 
+    box-sizing: border-box
+
+  
+ol, ul
+    list-style: none
+
+  
+img 
+    max-width: 100%
+
+
+body 
+    font-family: 'Montserrat', sans-serif
+
+
+//Переменные, операторы, вложения, математика
+
+$he: 70px
+
+.navbar
+    width: 100%
+    height: $he
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1)
+
+.container
+    height: inherit
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.navbar-menu
+    li
+        display: inline-block
+        padding-right: $he 
+        position: relative
+
+        a 
+            display: inline-block
+            color: black
+            opacity: 0.6
+            text-decoration: none
+            padding: 5px
+            transition: all .07s ease-in-out
+            &:hover 
+                opacity: 1
+
+    ul
+        display: none
+        position: absolute
+        top: $he - 20px
+        width: 150px
+
+
+
+#sub-menu
+    &:active
+        display: block
+        background-color: white
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .1)
+        opacity: 0.9
+        border-radius: 5px
+
+
+.navbar-brand
+    padding-left: 20px 
+    padding-right: 20px 
+    margin-top: 10px
+    font-weight: 700
+    font-size: 26px
+    text-decoration: none
+    color: black
+
+
+.time 
+    font-weight: 100
+    font-size: 13px
+    text-align: center
+
+
+.header 
+    min-height: 100vh
+    background-image: url('./../img/glav1.jpg')
+    background-size: cover
+    background-attachment: fixed
+    display: flex
+    align-items: center
+
+
+.header__col 
+    flex: 0 1 50%
+
+
+
+.header__block 
+    width: 65%
+    background-color: hsl(213 50% 92% / 0.5)
+    padding: 1em
+    border-radius: 1rem
+    backdrop-filter: blur(10px)
+
+    h1 
+        font-size: 2rem
+        font-weight: 700
+        line-height: 1.25
+        color: #000
+        margin-bottom: 20px
+
+    h4 
+        font-weight: 400
+        font-size: 18px 
+        line-height: 2.17
+        color: #333
+
+
+

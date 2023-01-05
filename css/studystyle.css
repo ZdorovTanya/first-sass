@@ -1,0 +1,95 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.navbar-menu li {
+    display: inline-block;
+    padding-right: 70px; /*   ИЗМЕНИТЬ    */
+    position: relative;
+}
+
+.navbar-menu ul{ /*!!!!1*/
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+}
+
+ul.sub-menu-active{
+    display: block;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+
+.navbar-menu li a {
+    display: inline-block;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 5px;
+    transition: all .07s ease-in-out;
+}
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+.navbar-brand {
+    padding-left: 20px; /*   ИЗМЕНИТЬ   */
+    padding-right: 20px; /* ДОБАВИТЬ  */
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    table-layout: fixed;
+    margin: auto;
+    margin-top: 10%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+
+thead{
+    text-align: center;
+    font-weight:200;
+}
+
+tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+   } 

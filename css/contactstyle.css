@@ -1,0 +1,378 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+} 
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.navbar-menu li {
+    display: inline-block;
+    padding-right: 70px; /*   ИЗМЕНИТЬ    */
+    position: relative;
+}
+
+.navbar-menu ul{ /*!!!!1*/
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+}
+
+ul.sub-menu-active{
+    display: block;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+
+.navbar-menu li a {
+    display: inline-block;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 5px;
+    transition: all .07s ease-in-out;
+}
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+.navbar-brand {
+    padding-left: 20px; /*   ИЗМЕНИТЬ   */
+    padding-right: 20px; /* ДОБАВИТЬ  */
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+}
+
+.time {
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h3{
+    font-weight: lighter;  
+}
+
+label {
+    display: block;
+    
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+input:autofill {
+    box-shadow: inset 0 0 0 100vmax white;
+}
+
+input:-webkit-autofill {
+    box-shadow: inset 0 0 0 100vmax white;
+}
+
+form{
+    text-align: center;
+}
+
+.red {
+    border: 1px solid rgb(210, 47, 36);
+    border-radius: 10px;
+}
+
+.green {
+    border: 1px solid rgb(93, 158, 28);
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tooltip{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tooltipSeen{
+    position: relative;
+    bottom: 43px; 
+    left: 930px;
+    opacity: 1;
+    visibility: visible;
+    background: rgba(72 122 180 / .2);
+    display: block;
+    top: 50%;
+    width: 560px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+
+input[type=text]:focus {
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type=text]:hover {
+    background-color: rgb(246, 250, 255);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+input[type=tel] {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=tel]:focus {
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type=tel]:hover {
+    background-color: rgb(246, 250, 255);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+input[type=date] {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: small;
+    text-align: center;
+}
+
+input[type=date]:focus {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+input[type=date]:hover {
+    background-color: rgb(246, 250, 255);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+input[type=email] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=email]:focus {
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type=email]:hover {
+    background-color: rgb(246, 250, 255);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+input[type=submit]{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit]:hover:enabled {
+    background-color: rgb(246, 250, 255);
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+input[type=reset]{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(246, 250, 255);
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+
+/* календарь */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{  /*любой элемент html страницы*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+
+    margin-left: 550px;
+
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    line-height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: #878787;
+    font-size: 1.9rem;
+}
+header .icons span:hover{
+    background: #f2f2f2;
+}
+header .icons span:last-child{
+    margin-right: -10px; /*любой элемент, являющийся последним в его родителе.*/
+}
+.calendar{
+    padding: 20px;
+}
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .weeks li{
+    font-weight: 500;
+}
+.calendar ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+.calendar .days li{
+    margin-top: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: rgb(39, 72, 148);
+}
+.calendar .days li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%); /*перемещение элемента с начальной точке по осям*/
+}
+.days li:hover::before{
+    background: #f2f2f2;
+}
+.days li.active::before{
+    background: rgb(232, 244, 252);
+}
+
+
+/*ВАЛИДАЦИЯ*/
+.error {
+    color: rgb(0, 7, 71);
+    opacity: 0.5;
+    margin-right: 60px;
+    text-align: right;
+}
+
+.good{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(45, 194, 25);
+    text-align: center;
+}
+
+
+

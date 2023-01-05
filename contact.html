@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="libs/bootstrep-grid.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="./sass/contactstyle.css"> 
+    
+    <!-- <script src="./js/jscontact.js"></script> -->
+    <script src="./js/jquery-3.6.1.js"></script>
+
+
+    <link type="image/x-icon" href="./img/men.png" rel="icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand" id="logo" >@zdorov_tanya</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu" id="nav">
+                    <li><a href="./index.html" class="forPicture"><img src="">Главная</a></li>
+                    <li><a href="./call.html" class="forPicture"><img src="">Обо мне</a></li>
+
+                    <li id="categories"><a href="./interest.html" class="forPicture"><img src="">Мои интересы</a>
+                        <ul>
+                            <li><a href="./interest.html#sec1">Фотография</a></li>
+                            <li><a href="./interest.html#sec2">Собаки</a></li>
+                            <li><a href="./interest.html#sec3">Колористика</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./foto.html" class="forPicture"><img src="">Фотоальбом</a></li>
+                    <li><a href="./test.html" class="forPicture"><img src="">Тест</a></li>
+                    <li><a href="./contact.html" class="forPicture"><img src="">Контакты</a></li>
+                    <li><a href="./history.html" class="forPicture"><img src="">История</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <h1>Контакты</h1><br>
+        
+    <form name = "contact_form" method="post" onsubmit="return validate_form();" action="mailto:zdorovilo.tanya@mail.ru">
+
+        <p>
+            <label for="Username">Фамилия Имя Отчество:</label>
+            <input id="Username" type="text" placeholder="Введите ФИО"  name = "contact_name">
+            <div class="tooltip">ФИО в именительном падеже, с большой буквы через пробел</div>
+        </p><br>
+
+        <div class="error"></div>
+
+        <p>
+            <label for="phone">Номер телефона:</label>
+            <input id="phone" type="tel" placeholder="+7(978)-000-00-00" name="phone_num">
+            <div class="tooltip">Напишите номер без разделяющих знаков, начиная с "+7"</div>
+        </p><br>
+ 
+        <div class="error"></div>
+
+        <label for="bday">Дата рождения:</label>
+        <input type="text" id="bday" name="daybirn" placeholder="день месяц год" readonly>
+         
+            <div class="wrapper">
+
+            </div> 
+        <br><br>
+
+        <p>
+            <label for="UserEmail">Email:</label>
+            <input id="UserEmail" type="email" name = "email_name" placeholder="Введите почту">
+            <div class="tooltip">Напишите пожалуйста свою настоящую почту с знаком "@"</div>
+        </p>
+
+        <div class="error"></div>
+        <br>
+
+            <h3>Укажите пол:</h3>
+
+            <p>
+                <label for="w"> <input type="radio" id="w" name="pol">Женский</label>
+            </p>
+
+            <p>
+                <label for="m"><input type="radio" id="m" name="pol">Мужской</label>
+            </p>
+
+
+        <br>
+
+            <h3>Окно ввода сообщения:</h3>
+
+            <textarea id="callback" name="comment" cols="40" rows="3"></textarea>
+
+        <br>
+        <!-- <input type="submit"> -->
+        <input type="submit" disabled value="Отправить" id="btn">
+        <input type="reset">
+
+    </form> 
+    <!-- <script src="./js/submenu.js"></script> -->
+    <script src="./js/jQforIndex.js"></script>
+
+    <!-- <script src="./js/calengar.js" defer></script> -->
+    <script src="./js/jQforCalendar.js"></script>
+
+    <!-- <script src="./js/jscontact.js"></script> -->
+    <script src="./js/jQforContact.js"></script>
+
+    <!-- <script src="./js/cookie.js"></script> -->
+    <script src="./js/jQforCookie.js"></script>
+
+    <script src="./js/cookiecookie.js"></script>
+    <!-- <script src="./js/jQforCookieCookie.js"></script> -->
+</body>
+</html> 
